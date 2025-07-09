@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2_Videogame-Store-Website-Mock</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double&family=Concert+One&family=Inconsolata:wdth,wght@100.3,604&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d99957b8e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header cute-principal-text">
+			<div class="header-content">
+				<div>🎮 Tienda Gamer</div>
+				<button class="menu-toggle" aria-label="Abrir menú">☰</button>
+			</div>
+		</header>
+		<nav class="sidebar">
+			<ul>
+				<li>Inicio</li>
+				<li>Ofertas</li>
+				<li>Novedades</li>
+				<li>Contacto</li>
+			</ul>
+		</nav>
+        <main class="main-content">
+            <section class="filters">
+                <input type="text" placeholder="Buscar juego..." />
+                <select>
+          <option value="">Género</option>
+          <option value="accion">Acción</option>
+          <option value="aventura">Aventura</option>
+          <option value="rpg">RPG</option>
+                </select>
+                <select>
+          <option value="">Plataforma</option>
+          <option value="pc">PC</option>
+          <option value="ps5">PlayStation 5</option>
+          <option value="switch">Nintendo Switch</option>
+                </select>
+                <button>Buscar</button>
+            </section>
+            <section class="featured">
+                <div class="game-card">
+                    <img src="assets/imgs/game.jpeg" alt="Portada del juego" />
+                    <h3>Pretty Princess Quest</h3>
+                    <p class="price">$19.99</p>
+                    <button>Agregar al carrito</button>
+                </div> 
+            </section>
+            <div class="pagination">
+                <button class="prev">←</button>
+                <button class="page">1</button>
+                <button class="page active">2</button>
+                <button class="page">3</button>
+                <button class="next">→</button>
+            </div>
+        </main>
+        <footer class="footer">
+            <h2>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </h2>
+            <h4>© 2025 Tienda Gamer</h4>            
+        </footer>
+    </div>
+    <script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const toggleBtn = document.querySelector('.menu-toggle');
+			const sidebar = document.querySelector('.sidebar');
+
+			toggleBtn.addEventListener('click', () => {
+				sidebar.classList.toggle('open');
+			});
+		});
+	</script>
+</body>
+</html>
